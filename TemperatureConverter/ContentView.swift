@@ -41,9 +41,8 @@ struct ContentView: View {
                 
                 HStack {
                     Spacer()
-                    Text("\(String(format:"%.0f", fahrenheit))")
+                    Text("\(String(format:"%.0f", fahrenheit)) degree Fahrenheit")
                         .font(.title2)
-                        .bold()
                     Spacer()
                 }
                 
@@ -72,7 +71,7 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack(alignment: .center) {
-                    Text("It's \(celsius) degree Celsius")
+                    Text("It's \(String(format:"%.0f", celsius)) degree Celsius")
                         .padding(.bottom, 20)
                     
                     Text(feedback)
