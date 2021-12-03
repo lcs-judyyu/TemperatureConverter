@@ -26,22 +26,26 @@ struct ContentView: View {
             
             Group {
                 
+                Text("Fahrenheit")
+                    .bold()
+                    .font(.title2)
+                
                 Slider(value: $fahrenheit,
-                       in: 0...100,
-                       step: 1,
+                       in: -122...122,
+                       step: 2,
                        label: {
-                    Text("Current Guess")
+                    Text("Fahrenheit")
                 },
                        minimumValueLabel: {
-                    Text("0")
+                    Text("-122°F")
                 },
                        maximumValueLabel: {
-                    Text("100")
+                    Text("122°F")
                 })
                 
                 HStack {
                     Spacer()
-                    Text("\(String(format:"%.0f", fahrenheit)) degree Fahrenheit")
+                    Text("\(String(format:"%.0f", fahrenheit)) °F")
                         .font(.title2)
                     Spacer()
                 }
@@ -65,13 +69,19 @@ struct ContentView: View {
                 Spacer()
             }
             
+            Text("Celsius")
+                .bold()
+                .font(.title2)
+            
             
             HStack {
                 
                 Spacer()
                 
                 VStack(alignment: .center) {
-                    Text("It's \(String(format:"%.0f", celsius)) degree Celsius")
+                    Text("It's \(String(format:"%.0f", celsius)) °C")
+                        .bold()
+                        .font(.title3)
                         .padding(.bottom, 20)
                     
                     Text(feedback)
