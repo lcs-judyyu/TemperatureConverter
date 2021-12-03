@@ -86,7 +86,7 @@ struct ContentView: View {
                         
                         Text("It's nice outside!")
                         
-                    } else if 30 <= celsius && celsius < 50 {
+                    } else if 30 <= celsius && celsius <= 50 {
                         
                         Text("Drink more water!")
                         
