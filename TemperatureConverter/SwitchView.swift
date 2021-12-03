@@ -23,7 +23,7 @@ struct SwitchView: View {
         return celsius * 1.8 + 32
     }
     
-    @State var mode: Double = 1.0
+    @State var mode: Double = 2.0
     
     var body: some View {
         VStack {
@@ -134,7 +134,7 @@ struct SwitchView: View {
                             .bold()
                             .font(.title2)
                         
-                        Slider(value: $fahrenheit,
+                        Slider(value: $celsius,
                                in: -50...50,
                                step: 1,
                                label: {
@@ -173,27 +173,29 @@ struct SwitchView: View {
                                 .padding(.bottom, 20)
                             
                             //Selection Statement
-                            if -50 <= fahrenheitToCelsius && fahrenheitToCelsius < -20 {
+                            let currentCelsius = Int(celsius)
+                            
+                            if -50 <= currentCelsius && currentCelsius < -20 {
                                 
                                 Text("Don't forget to bring your coat!")
                                 
-                            } else if -20 <= fahrenheitToCelsius && fahrenheitToCelsius < 0 {
+                            } else if -20 <= currentCelsius && currentCelsius < 0 {
                                 
                                 Text("Dress warmly!")
                                 
-                            } else if 0 <= fahrenheitToCelsius && fahrenheitToCelsius < 10 {
+                            } else if 0 <= currentCelsius && currentCelsius < 10 {
                                 
                                 Text("It's a bit cold")
                                 
-                            } else if 10 <= fahrenheitToCelsius && fahrenheitToCelsius < 20 {
+                            } else if 10 <= currentCelsius && currentCelsius < 20 {
                                 
                                 Text("Go take a walk!")
                                 
-                            } else if 20 <= fahrenheitToCelsius && fahrenheitToCelsius < 30 {
+                            } else if 20 <= currentCelsius && currentCelsius < 30 {
                                 
                                 Text("It's nice outside!")
                                 
-                            } else if 30 <= fahrenheitToCelsius && fahrenheitToCelsius < 50 {
+                            } else if 30 <= currentCelsius && currentCelsius < 50 {
                                 
                                 Text("Drink more water!")
                                 
