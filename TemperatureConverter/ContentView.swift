@@ -22,7 +22,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 25) {
             
             Group {
                 
@@ -46,27 +46,11 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     Text("\(String(format:"%.0f", fahrenheit)) °F")
+                        .bold()
                         .font(.title2)
                     Spacer()
                 }
                 
-            }
-            
-            HStack {
-                
-                Spacer()
-                
-                Button(action: {
-                    //selection statement
-                    
-                    print("Button was pressed")
-                }, label: {
-                    Text("Submit")
-                })
-                    .buttonStyle(.bordered)
-                    .padding(.top, 10)
-                
-                Spacer()
             }
             
             Text("Celsius")
@@ -79,22 +63,23 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack(alignment: .center) {
-                    Text("It's \(String(format:"%.0f", celsius)) °C")
+                    Text("It's \(String(format:"%.1f", celsius)) °C")
                         .bold()
                         .font(.title3)
                         .padding(.bottom, 20)
                     
                     Text(feedback)
                         .italic()
+                        .font(.subheadline)
                 }
+                .padding(.vertical, 10)
                 
                 Spacer()
             }
             
             Spacer()
         }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 10)
+        .padding(20)
         .navigationTitle("Temperature Converter")
     }
 }
