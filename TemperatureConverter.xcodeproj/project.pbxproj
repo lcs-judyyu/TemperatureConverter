@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A4CDBD22759AED100EEA341 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CDBD12759AED100EEA341 /* SwitchView.swift */; };
 		5A5CB2702759161400B7B790 /* TemperatureConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CB26F2759161400B7B790 /* TemperatureConverterApp.swift */; };
 		5A5CB2722759161400B7B790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CB2712759161400B7B790 /* ContentView.swift */; };
 		5A5CB2742759161D00B7B790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CB2732759161D00B7B790 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A4CDBD12759AED100EEA341 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		5A5CB26C2759161400B7B790 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5CB26F2759161400B7B790 /* TemperatureConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterApp.swift; sourceTree = "<group>"; };
 		5A5CB2712759161400B7B790 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				5A5CB26F2759161400B7B790 /* TemperatureConverterApp.swift */,
 				5A5CB2712759161400B7B790 /* ContentView.swift */,
+				5A4CDBD12759AED100EEA341 /* SwitchView.swift */,
 				5A5CB2732759161D00B7B790 /* Assets.xcassets */,
 				5A5CB2752759161D00B7B790 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				5A5CB2722759161400B7B790 /* ContentView.swift in Sources */,
 				5A5CB2702759161400B7B790 /* TemperatureConverterApp.swift in Sources */,
+				5A4CDBD22759AED100EEA341 /* SwitchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

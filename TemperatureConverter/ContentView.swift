@@ -12,9 +12,6 @@ struct ContentView: View {
     //MARK: Stored properties
     @State var fahrenheit: Double = 73
     
-    //feedback
-    @State var feedback = " "
-    
     //MARK: Computed properties
     var celsius: Double {
         return (fahrenheit - 32) / 1.8
@@ -68,10 +65,35 @@ struct ContentView: View {
                         .font(.title3)
                         .padding(.bottom, 20)
                     
-                    Text(feedback)
-                        .italic()
-                        .font(.subheadline)
+                    //Selection Statement
+                    if -50 <= celsius && celsius < -20 {
+                        
+                        Text("Don't forget to bring your coat!")
+                        
+                    } else if -20 <= celsius && celsius < 0 {
+                        
+                        Text("Dress warmly!")
+                        
+                    } else if 0 <= celsius && celsius < 10 {
+                        
+                        Text("It's a bit cold")
+                        
+                    } else if 10 <= celsius && celsius < 20 {
+                        
+                        Text("Go take a walk!")
+                        
+                    } else if 20 <= celsius && celsius < 30 {
+                        
+                        Text("It's nice outside!")
+                        
+                    } else if 30 <= celsius && celsius < 50 {
+                        
+                        Text("Drink more water!")
+                        
+                    }
+                    
                 }
+                .font(.title2)
                 .padding(.vertical, 10)
                 
                 Spacer()
