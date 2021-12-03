@@ -109,7 +109,7 @@ struct SwitchView: View {
                                 
                                 Text("It's nice outside!")
                                 
-                            } else if 30 <= fahrenheitToCelsius && fahrenheitToCelsius < 50 {
+                            } else if 30 <= fahrenheitToCelsius && fahrenheitToCelsius <= 50 {
                                 
                                 Text("Drink more water!")
                                 
