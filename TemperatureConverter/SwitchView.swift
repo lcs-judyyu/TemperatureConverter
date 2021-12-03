@@ -39,7 +39,6 @@ struct SwitchView: View {
                     
                 })
                     .pickerStyle(SegmentedPickerStyle())
-                
             }
             
             //content
@@ -161,7 +160,6 @@ struct SwitchView: View {
                         .bold()
                         .font(.title2)
                     
-                    
                     HStack {
                         
                         Spacer()
@@ -198,21 +196,17 @@ struct SwitchView: View {
                             } else if 30 <= currentCelsius && currentCelsius <= 50 {
                                 
                                 Text("Drink more water!")
-                                
                             }
-                            
                         }
                         .font(.title2)
                         .padding(.vertical, 10)
                         
                         Spacer()
                     }
-                    
                     Spacer()
                 }
                 .padding(.top, 20)
             }
-            
         }
         .padding(20)
         .navigationTitle("Temperature Converter")
