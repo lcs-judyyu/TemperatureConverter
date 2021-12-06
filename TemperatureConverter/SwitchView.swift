@@ -51,13 +51,13 @@ struct SwitchView: View {
                             .font(.title2)
                         
                         Slider(value: $fahrenheit,
-                               in: -122...122,
+                               in: -58...122,
                                step: 2,
                                label: {
                             Text("Fahrenheit")
                         },
                                minimumValueLabel: {
-                            Text("-122°F")
+                            Text("-58°F")
                         },
                                maximumValueLabel: {
                             Text("122°F")
